@@ -35,7 +35,6 @@ namespace UnityEngine.Rendering.HighDefinition
 
         // Punctual shadow kernels
         int m_RaytracingPointShadowSample;
-        int m_RaytracingSpotShadowSample;
 
         // Area shadow kernels
         int m_AreaRaytracingAreaShadowPrepassKernel;
@@ -71,7 +70,6 @@ namespace UnityEngine.Rendering.HighDefinition
 #if ENABLE_RAYTRACING
             m_RaytracingDirectionalShadowSample = m_ScreenSpaceShadowsCS.FindKernel("RaytracingDirectionalShadowSample");
             m_RaytracingPointShadowSample = m_ScreenSpaceShadowsCS.FindKernel("RaytracingPointShadowSample");
-            m_RaytracingSpotShadowSample = m_ScreenSpaceShadowsCS.FindKernel("RaytracingSpotShadowSample");
 
             // Area shadow kernels
             m_AreaRaytracingAreaShadowPrepassKernel = m_ScreenSpaceShadowsCS.FindKernel("RaytracingAreaShadowPrepass");
